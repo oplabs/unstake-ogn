@@ -3,8 +3,19 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
+  ScrollRestoration
+} from '@remix-run/react'
+
+import { WagmiProvider } from 'wagmi'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { RainbowKitProvider } from '@rainbow-me/rainbowkit'
+import '@rainbow-me/rainbowkit/styles.css'
+
+import './tailwind.css'
+
+import { config } from '~/utils/wagmi'
+
+const queryClient = new QueryClient()
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,14 +27,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <WagmiProvider config={config}>
+          <QueryClientProvider client={queryClient}>
+            <RainbowKitProvider>{children}</RainbowKitProvider>
+          </QueryClientProvider>
+        </WagmiProvider>
+
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />
 }
