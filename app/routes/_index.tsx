@@ -34,8 +34,8 @@ const legacyAbi = parseAbi([
   `function exit()`
 ])
 
-// const blockNumber = undefined
-const blockNumber = 19405119n
+const blockNumber = undefined
+// const blockNumber = 19405119n
 // const address = '0x415bd9A5e2fDcB8310ceE3F785F25B5E4D4564E3'
 
 export default function Index() {
@@ -55,8 +55,8 @@ export default function Index() {
         abi: legacyAbi,
         address: legacyAddress,
         functionName: 'totalCurrentHoldings',
-        // args: [address || zeroAddress],
-        args: ['0x415bd9A5e2fDcB8310ceE3F785F25B5E4D4564E3']
+        args: [address || zeroAddress],
+        // args: ['0x415bd9A5e2fDcB8310ceE3F785F25B5E4D4564E3']
       }
     ],
     query: {
