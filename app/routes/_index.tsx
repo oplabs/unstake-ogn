@@ -55,7 +55,7 @@ export default function Index() {
         abi: legacyAbi,
         address: legacyAddress,
         functionName: 'totalCurrentHoldings',
-        args: [address || zeroAddress],
+        args: [address || zeroAddress]
         // args: ['0x415bd9A5e2fDcB8310ceE3F785F25B5E4D4564E3']
       }
     ],
@@ -98,11 +98,11 @@ export default function Index() {
         <OriginLogo />
         <ConnectButton />
       </div>
-      <div className="font-medium text-2xl">Unstake OGN</div>
+      <div className="font-medium text-2xl">New OGN Staking Coming Soon! </div>
       <div className="mt-4 text-sm text-gray-800">
-        This tool allows you to withdraw OGN from our legacy staking programs.
-        Connect your wallet, then use the Unstake button to retrieve any
-        outstanding OGN.
+        We are revamping OGN staking. This tool allows you to withdraw OGN from
+        our legacy staking programs. Connect your wallet, then use the Unstake
+        button to retrieve any outstanding OGN.
       </div>
       <div className="my-12 text-xl text-center flex justify-center items-start gap-8">
         {isLoading ? (
