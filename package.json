@@ -8,9 +8,10 @@
     "cf-typegen": "wrangler types",
     "deploy": "pnpm run build && wrangler deploy",
     "dev": "react-router dev",
-    "postinstall": "npm run cf-typegen",
     "preview": "pnpm run build && vite preview",
-    "typecheck": "npm run cf-typegen && react-router typegen && tsc -b"
+    "typecheck": "pnpm run cf-typegen && react-router typegen && tsc -b",
+    "typegen-wrangler": "wrangler types",
+    "typegen-react-router": "pnpm react-router typegen"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,mdx}": "eslint --cache --fix"
