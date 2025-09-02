@@ -1,24 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 body {
   background-color: #f6f8fe;
+
+  h1 {
+    @apply text-2xl font-medium;
+  }
+
+  h4 {
+    @apply text-sm text-gray-800;
+  }
 }
 
 .btn {
-  @apply rounded-full leading-tight font-medium text-white bg-[#0074F0] hover:bg-[#0074F0]/75;
+  @apply rounded-full bg-[#0074F0] px-6 py-3 leading-tight font-medium text-white hover:bg-[#0074F0]/75;
 }
 
 .btn-disabled {
-  @apply rounded-full leading-tight font-medium text-white/70 bg-[#0074F0]/50;
+  @apply rounded-full bg-[#0074F0]/50 leading-tight font-medium text-white/70;
 }
 
 .btn-secondary {
-  @apply rounded-full leading-tight font-medium bg-white hover:bg-gray-50 transition-all duration-200 ease-in-out border border-gray-200;
+  @apply rounded-full border border-gray-200 bg-white leading-tight font-medium transition-all duration-200 ease-in-out hover:bg-gray-50;
 }
 
-
 .white-box {
-  @apply bg-white px-12 py-8 rounded-2xl shadow-lg;
+  @apply rounded-2xl bg-white px-12 py-8 shadow-lg;
 }

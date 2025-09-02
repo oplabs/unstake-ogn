@@ -1,7 +1,8 @@
-import { Fragment } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
+import { Fragment } from 'react';
 
-import { ArrowUpRight, CheckCircle, Close, Spinner } from './Icons'
+import { Dialog, Transition } from '@headlessui/react';
+
+import { ArrowUpRight, CheckCircle, Close, Spinner } from './Icons';
 
 export function Modal({
   isOpen,
@@ -9,15 +10,15 @@ export function Modal({
   title,
   txLink,
   status,
-  description
+  description,
 }: {
-  isOpen: boolean
-  setIsOpen: (isOpen: boolean) => void
-  txLink?: string
-  title: string
-  status: string
-  description?: string
-  modalButtonAction?: () => void
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+  txLink?: string;
+  title: string;
+  status: string;
+  description?: string;
+  modalButtonAction?: () => void;
 }) {
   return (
     <Transition show={isOpen} as={Fragment}>
@@ -51,13 +52,13 @@ export function Modal({
             >
               <Dialog.Panel className="w-full max-w-sm transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <button
-                  className="absolute top-4 right-6 text-grey-500 hover:text-black"
+                  className="text-grey-500 absolute top-4 right-6 hover:text-black"
                   onClick={() => setIsOpen(false)}
                 >
                   <Close />
                 </button>
                 <div className="flex flex-col items-center">
-                  <div className="text-red-500 my-8">
+                  <div className="my-8 text-red-500">
                     {status === 'loading' ? (
                       <Spinner size={42} />
                     ) : status === 'error' ? (
@@ -68,12 +69,12 @@ export function Modal({
                   </div>
                   <Dialog.Title
                     as="h3"
-                    className="text-xl font-medium leading-6 text-gray-900 mb-8"
+                    className="mb-8 text-xl leading-6 font-medium text-gray-900"
                   >
                     {title}
                   </Dialog.Title>
                   {description && (
-                    <p className="text-gray-500 mb-8 break-all text-center">
+                    <p className="mb-8 text-center break-all text-gray-500">
                       {description}
                     </p>
                   )}
@@ -98,5 +99,5 @@ export function Modal({
         </div>
       </Dialog>
     </Transition>
-  )
+  );
 }

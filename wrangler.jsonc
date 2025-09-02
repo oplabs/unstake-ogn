@@ -1,13 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "unstake-ogn",
-  "compatibility_date": "2025-06-17",
-  "compatibility_flags": [
-    "nodejs_compat",
-    "no_handle_cross_request_promise_resolution",
-  ],
+  "compatibility_date": "2025-04-04",
+  "main": "./workers/app.ts",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "VITE_ALCHEMY_RPC": "https://eth-mainnet.g.alchemy.com/v2",
+    "VITE_CUSTOM_RPC": "",
+  },
   "preview_urls": true,
   "observability": {
     "enabled": true,
-  }
+  },
 }

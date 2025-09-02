@@ -15,5 +15,4 @@ export default defineConfig({
     tsconfigPaths(),
     svgr(),
   ],
-  server: { hmr: { protocol: 'ws', host: 'localhost' } },
 });

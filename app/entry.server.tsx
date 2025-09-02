@@ -1,6 +1,3 @@
-import './polyfills';
-import '~/clients/dayjs';
-
 import { isbot } from 'isbot';
 import { renderToReadableStream } from 'react-dom/server';
 import { ServerRouter } from 'react-router';

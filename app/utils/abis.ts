@@ -4,31 +4,31 @@ export const SEASON_ABI = [
       {
         internalType: 'address',
         name: 'series_',
-        type: 'address'
+        type: 'address',
       },
       {
         internalType: 'uint256',
         name: 'startTime_',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: 'lockStartTime_',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: 'endTime_',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: 'claimEndTime_',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'constructor'
+    type: 'constructor',
   },
   {
     anonymous: false,
@@ -37,17 +37,17 @@ export const SEASON_ABI = [
         indexed: false,
         internalType: 'uint256',
         name: 'totalRewardETH',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         indexed: false,
         internalType: 'uint256',
         name: 'totalRewardOGN',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'Finale',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -56,23 +56,23 @@ export const SEASON_ABI = [
         indexed: true,
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
+        type: 'address',
       },
       {
         indexed: true,
         internalType: 'uint256',
         name: 'amount',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         indexed: false,
         internalType: 'uint256',
         name: 'points',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'Stake',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -81,48 +81,48 @@ export const SEASON_ABI = [
         indexed: true,
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'Unstake',
-    type: 'event'
+    type: 'event',
   },
   {
     inputs: [
       {
         internalType: 'uint256',
         name: 'initialSupply',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'bootstrap',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'claim',
     outputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -131,11 +131,11 @@ export const SEASON_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -144,54 +144,54 @@ export const SEASON_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'expectedRewards',
     outputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'getPoints',
     outputs: [
       {
         internalType: 'uint128',
         name: '',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -200,11 +200,11 @@ export const SEASON_ABI = [
       {
         internalType: 'uint128',
         name: '',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -213,35 +213,35 @@ export const SEASON_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'uint256',
         name: 'amount',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: 'blockStamp',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'pointsInTime',
     outputs: [
       {
         internalType: 'uint128',
         name: '',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -250,21 +250,21 @@ export const SEASON_ABI = [
       {
         internalType: 'bool',
         name: 'bootstrapped',
-        type: 'bool'
+        type: 'bool',
       },
       {
         internalType: 'bool',
         name: 'snapshotTaken',
-        type: 'bool'
+        type: 'bool',
       },
       {
         internalType: 'uint128',
         name: 'totalPoints',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -273,11 +273,11 @@ export const SEASON_ABI = [
       {
         internalType: 'contract ISeries',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -286,40 +286,40 @@ export const SEASON_ABI = [
       {
         internalType: 'uint128',
         name: 'rewardETH',
-        type: 'uint128'
+        type: 'uint128',
       },
       {
         internalType: 'uint128',
         name: 'rewardOGN',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
+        type: 'address',
       },
       {
         internalType: 'uint256',
         name: 'amount',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'stake',
     outputs: [
       {
         internalType: 'uint128',
         name: '',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -328,61 +328,61 @@ export const SEASON_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'unstake',
     outputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'users',
     outputs: [
       {
         internalType: 'bool',
         name: 'exists',
-        type: 'bool'
+        type: 'bool',
       },
       {
         internalType: 'uint128',
         name: 'points',
-        type: 'uint128'
-      }
+        type: 'uint128',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
-  }
-] as const
+    type: 'function',
+  },
+] as const;
 
 export const SERIES_ABI = [
   {
@@ -392,17 +392,17 @@ export const SERIES_ABI = [
         indexed: true,
         internalType: 'address',
         name: 'previousGovernor',
-        type: 'address'
+        type: 'address',
       },
       {
         indexed: true,
         internalType: 'address',
         name: 'newGovernor',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'GovernorshipTransferred',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -411,11 +411,11 @@ export const SERIES_ABI = [
         indexed: false,
         internalType: 'uint8',
         name: 'version',
-        type: 'uint8'
-      }
+        type: 'uint8',
+      },
     ],
     name: 'Initialized',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -424,17 +424,17 @@ export const SERIES_ABI = [
         indexed: true,
         internalType: 'uint256',
         name: 'number',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         indexed: true,
         internalType: 'address',
         name: 'season',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'NewSeason',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -443,17 +443,17 @@ export const SERIES_ABI = [
         indexed: true,
         internalType: 'address',
         name: 'previousGovernor',
-        type: 'address'
+        type: 'address',
       },
       {
         indexed: true,
         internalType: 'address',
         name: 'newGovernor',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'PendingGovernorshipTransfer',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -462,11 +462,11 @@ export const SERIES_ABI = [
         indexed: true,
         internalType: 'address',
         name: 'season',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'SeasonCancelled',
-    type: 'event'
+    type: 'event',
   },
   {
     anonymous: false,
@@ -475,54 +475,54 @@ export const SERIES_ABI = [
         indexed: true,
         internalType: 'uint256',
         name: 'number',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         indexed: true,
         internalType: 'address',
         name: 'season',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'SeasonStart',
-    type: 'event'
+    type: 'event',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'balanceOf',
     outputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'uint256',
         name: 'seasonIndex',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: 'totalStaked',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'bootstrapSeason',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -531,23 +531,23 @@ export const SERIES_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
     name: 'claimGovernance',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -556,11 +556,11 @@ export const SERIES_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -569,11 +569,11 @@ export const SERIES_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -582,11 +582,11 @@ export const SERIES_ABI = [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -595,11 +595,11 @@ export const SERIES_ABI = [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -608,29 +608,29 @@ export const SERIES_ABI = [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'ogn_',
-        type: 'address'
+        type: 'address',
       },
       {
         internalType: 'address',
         name: 'vault_',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'initialize',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -639,30 +639,30 @@ export const SERIES_ABI = [
       {
         internalType: 'bool',
         name: '',
-        type: 'bool'
-      }
+        type: 'bool',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'userAddress',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'latestStakeTime',
     outputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -671,11 +671,11 @@ export const SERIES_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -684,100 +684,100 @@ export const SERIES_ABI = [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
     name: 'popSeason',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'season',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'pushSeason',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'seasons',
     outputs: [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'ogn_',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'setOGN',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: 'vault_',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'setVault',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'uint256',
         name: 'amount',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     name: 'stake',
     outputs: [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
+        type: 'uint256',
       },
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -786,24 +786,24 @@ export const SERIES_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [
       {
         internalType: 'address',
         name: '_newGovernor',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     name: 'transferGovernance',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -812,11 +812,11 @@ export const SERIES_ABI = [
       {
         internalType: 'uint256',
         name: '',
-        type: 'uint256'
-      }
+        type: 'uint256',
+      },
     ],
     stateMutability: 'nonpayable',
-    type: 'function'
+    type: 'function',
   },
   {
     inputs: [],
@@ -825,10 +825,10 @@ export const SERIES_ABI = [
       {
         internalType: 'address',
         name: '',
-        type: 'address'
-      }
+        type: 'address',
+      },
     ],
     stateMutability: 'view',
-    type: 'function'
-  }
-] as const
+    type: 'function',
+  },
+] as const;
