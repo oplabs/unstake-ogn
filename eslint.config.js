@@ -76,6 +76,7 @@ export default defineConfig([
       '**/.wrangler/**/*',
       '**/node_modules',
       '**/build',
+      '**/dist',
       '**/*.generated.ts',
       'app/generated/*',
     ],
