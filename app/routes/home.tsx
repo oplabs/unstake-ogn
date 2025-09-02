@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import type { MetaFunction } from "@remix-run/cloudflare";
 import { ConnectButton } from "~/components/ConnectButton";
 import { parseAbi, zeroAddress } from "viem";
 import {

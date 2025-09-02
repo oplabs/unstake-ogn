@@ -1,10 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration
-} from '@remix-run/react'
+import './polyfills';
 
 import { WagmiProvider } from 'wagmi'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -14,8 +8,6 @@ import '@rainbow-me/rainbowkit/styles.css'
 import './tailwind.css'
 
 import { config } from '~/utils/wagmi'
-
-const queryClient = new QueryClient()
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

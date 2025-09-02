@@ -1,16 +1,22 @@
-import { unstable_connector, http, fallback } from 'wagmi'
-import { mainnet } from 'wagmi/chains'
-import { injected } from 'wagmi/connectors'
-import { getDefaultConfig } from '@rainbow-me/rainbowkit'
+import {  http, fallback } from "wagmi";
+import { mainnet } from "wagmi/chains";
+import { getDefaultConfig } from "@rainbow-me/rainbowkit";
 
 export const config = getDefaultConfig({
-  appName: 'OriginStory',
-  projectId: 'b6187205b37dc9d704772f16dca5b71e',
+  appName: "OriginStory",
+  projectId: "b6187205b37dc9d704772f16dca5b71e",
   chains: [mainnet],
   ssr: true,
-
   transports: {
-    [mainnet.id]: fallback([unstable_connector(injected), http()])
-    // [mainnet.id]: http('http://localhost:8545')
-  }
-})
+    [mainnet.id]: !import.meta.env?.VITE_CUSTOM_RPC
+      ? fallback([
+          http(
+            `${import.meta.env.VITE_ALCHEMY_RPC}/${
+              import.meta.env.VITE_ALCHEMY_ID
+            }`
+          ),
+          http(),
+        ])
+      : http(import.meta.env.VITE_CUSTOM_RPC),
+  },
+});
