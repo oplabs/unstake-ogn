@@ -36,12 +36,13 @@ A web application that allows users to withdraw OGN (Origin Protocol) tokens fro
    cp .dev.vars.example .dev.vars
    ```
 
-   Edit `.dev.vars` and add your Alchemy API credentials:
+   Edit `.dev.vars` and add your [dRPC](https://drpc.org) API key:
 
    ```
-   VITE_ALCHEMY_ID=your_alchemy_id
-   VITE_ALCHEMY_RPC=your_alchemy_rpc_url
+   VITE_DRPC_KEY=your_drpc_key
    ```
+
+   If no key is set, the app falls back to the public RPC endpoint for Ethereum mainnet.
 
 ## 🚀 Development
 
